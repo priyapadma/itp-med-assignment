@@ -4,7 +4,7 @@ Note: Please make sure you have installed node and npm in your system. You can c
 
 1.  **Install npm**
 
-	  -> To get Node.js, go to `https://www.npmjs.com/get-npm`
+    -> To get npm, go to `https://www.npmjs.com/get-npm`
     -> To check your version, run npm -v in a terminal/console window.
 
 2.  **Install nodeJS**
