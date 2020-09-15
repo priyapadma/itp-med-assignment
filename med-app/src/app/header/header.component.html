@@ -1,0 +1,50 @@
+<header class="header-container">
+    <nav class="custom-container navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" routerLink="/">
+            <img src="assets/images/logo.png" alt="Logo" class="app-logo">
+        </a>
+        <div class="mobile-menu-sec">
+            <a class="mobile-menu-lnk" (click)="showMobileNav()">
+                <img src="../../assets/images/mobile/hamburger.png" alt="Mobile Menu"/>
+            </a>
+        </div>
+        <!------------Mobile & Tab Nav bar-------------------->
+        <ul class="sidenav" [ngClass]="mobileMenu ? 'show-mobile-menu' : ''">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/">Service</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/">Doctors</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/">Contact</a>
+            </li>
+        </ul>
+  
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" routerLink="/">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/">Doctors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>

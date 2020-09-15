@@ -1,0 +1,114 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import 'assets/scss/variable.scss';
+
+@font-face {
+    font-family: PalanquinDark-Regular;
+    src: url('./assets/fonts/palanquin.regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal
+}
+
+@font-face {
+    font-family: PalanquinDark-Bold;
+    src: url('./assets/fonts/PalanquinDark-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal
+}
+
+*{
+    font-family: PalanquinDark-Regular, sans-serif;
+    color: $primary_font_color;
+    font-size: 16px;
+    &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}
+
+/*********************************Common Styles******************************************/
+.row {
+    margin: 0;
+    padding: 0
+}
+p, h1 {
+    margin-bottom: 0;
+}
+ul {
+    list-style: none !important;
+    margin-bottom: 0;
+}
+.custom-container {
+    padding-left: 8.625rem;
+    padding-right: 8.625rem;
+}
+.text-white {
+    color: $white_color;
+}
+.text-black {
+    color: $primary_font_color;
+}
+
+/*********************************Button Styles******************************************/
+button {
+    &.btn {
+       /* width: 10.625rem;*/
+        width: auto;
+        height: 3rem;
+        font-family: PalanquinDark-Bold, sans-serif;
+        font-weight: 600;
+        font-size: 1.125rem;
+        border: none;
+        border-radius: 50px;
+        color: $white_color;
+        padding: 0 2.5rem;
+        &.btn-primary {
+            background-color: $primary_button_color;
+            &:hover, &:active {
+                background-color: $secondary_button_color !important;
+            }
+        }
+        &.btn-secondary {
+            background-color: $secondary_button_color;
+            &:hover, &:active {
+                background-color: $primary_button_color !important;
+            }
+        }
+        &.btn-gray {
+            background-color: $gray_btn_bg;
+            color: $primary_button_color;
+            &:hover, &:active {
+                background-color: $secondary_button_color !important;
+            }
+        }
+    } 
+}
+
+/*********************************Form Styles******************************************/
+form {
+    input {
+        &.form-control {
+            height: 3rem;
+        }
+    }
+}
+
+/********************Mobile View********************************************/
+@media (max-width: 767px) {
+    .custom-container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/*****************************Tab View**************************************/
+@media (min-width: 768px) and (max-width: 991px) {
+    .custom-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+/******************************Mobile & Tab View************************************/
+@media (max-width: 991px) {
+
+}

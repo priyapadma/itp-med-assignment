@@ -1,0 +1,1244 @@
+@import "../../assets/scss/variable.scss";
+
+.main-content-wrap {
+    /****************************Common Styles********************************/
+    .content-ttl-prefix {
+        color: $secondary_font_color;
+        font-size: 1.125rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    .content-ttl {
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+    }
+    .content-ttl-sml {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+    .content-sub {
+        font-size: 1.25rem;
+    }
+    .content-sub-light {
+        opacity: 0.5019607843137255;
+    }
+    .helper {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+    .btn-container {
+        padding-top: 3rem;
+    }
+    /*****************************Banner Styles Starts here************************************/
+    .banner-container {
+        padding-left: 8.625rem;
+        /*padding-bottom: 15rem;*/
+        .banner-content-sec {
+            padding-top: 10rem;
+            .content-ttl-prefix {
+                padding-bottom: 2.625rem;
+            }
+            .content-ttl {
+                padding-bottom: 2.125rem;
+            }
+            .banner-btn {
+                padding-top: 3.9375rem;
+            }
+        }
+        .banner-img-sec {
+            padding-top: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            .banner-img-main-sm, .banner-bg-sm1, .banner-bg-mix-sm1 {
+                display: none;
+            }
+            .banner-img-main-lg {
+                z-index: 999;
+            }
+            .banner-bg-sm {
+                position: absolute;
+                right: 0;
+                top: -80px;
+                height: 73%;
+                width: 70%;
+                bottom: unset;
+            }
+            .banner-bg-mix-sm {
+                position: absolute;
+                bottom: unset;
+                right: 0;
+                background-color: $primary_img_bg;
+                top: -80px;
+                width: 28%;
+                height: 30%;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 20px;
+            }
+        }
+    }
+    /*****************************Opening Hours Styles Starts here*****************************/
+    .opening-hours-container {
+        background-color: $opening_hours_bg;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        .op-card {
+            margin: 1rem 1.625rem 1rem 0;
+            background-color: $white_color;
+            width: 15rem;
+            min-width: 15rem;
+            border-radius: 20px;
+            box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+            padding: 2.25rem 2rem;
+            &.primary {
+                background-color: $primary_button_color;
+                color: $white_color;
+                h3 {
+                    color: $white_color; 
+                    padding-bottom: 3.75rem;
+                }
+            }
+            h3 {
+                padding: 0;
+                font-size: 1.5rem;
+            }
+            .op-sub-cont {
+                opacity: 0.49411764705882355;
+                font-size: 0.875rem;
+                color: $white_color; 
+                &.sec {
+                    padding-top: 2rem;
+                }
+            }
+            .op-main-cont {
+                color: $white_color; 
+            }
+            p {
+                padding-top: 1.1875rem;
+                opacity: 0.5019607843137255;
+                padding-bottom: 3.375rem; 
+            }
+        }
+        .op-card:last-child {
+            margin-right: 0;
+        }
+    }
+    /*****************************About Styles Starts here*****************************/
+    .about-container {
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+        .about-video-sec {
+            background-image: url('../../assets/images/about.svg');
+            background-repeat: no-repeat;
+            width: 570px;
+            height: 496px;
+            background-position: top;
+            padding: 0;
+            border-radius: 20px;
+            .about-top-sec {
+                position: absolute;
+                top: -39px;
+                left: -68px;
+                z-index: -1;
+            }
+            .about-play-bg {
+                position: absolute;
+                top: 40%;
+                margin: 0 auto;
+                left: 0;
+                right: 0;
+            }
+            .about-white-bg {
+                position: absolute;
+                top: 43%;
+                margin: 0 auto;
+                left: 0;
+                right: 0;
+            }
+            .about-play-btn {
+                position: absolute;
+                top: 50%;
+                margin: 0 auto;
+                left: 0;
+                right: 0;
+            }
+        }
+        .about-cnt-sec {
+            padding: 0.625rem 0 0.625rem 6.25rem;
+            .content-ttl-prefix {
+                padding-bottom: 2.3125rem;
+            }
+            .content-ttl-sml {
+                padding-bottom: 1.5rem;
+            }
+            .content-sub-light {
+                padding-top: 1.5rem;
+            }
+            .about-btn {
+                padding-top: 3rem;
+            }
+        }
+    }
+    /*****************************Services Styles Starts here*****************************/
+    .services-container {
+        padding-top: 5.75rem;
+        padding-bottom: 9rem;
+        background-color: $opening_hours_bg;
+        .content-ttl-prefix {
+            padding-bottom: 2.3125rem;
+        }
+        .service-card-sec {
+            padding: 4.375rem 0 0;
+            /*.row {
+                justify-content: space-between;
+                align-items: center;
+            }*/
+            .service-card {
+                margin-right: 1.375rem;
+                background-color: $white_color;
+                border-radius: 20px;
+                box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+                padding: 2.5rem 1.25rem 1.4375rem;
+                /*flex: 0 0 30%;
+                max-width: 30%;*/
+                width: 9.6875rem;
+                min-width: 9.6875rem;
+                margin-bottom: 2rem;
+                .serv-img-bg {
+                    width: 102px;
+                    height: 102px;
+                    border-radius: 50%;
+                    text-align: center;
+                    background-color: $opening_hours_bg;
+                    margin: 0 auto;
+                }
+                &.primary {
+                    background-color: $primary_button_color;
+                    color: $white_color;
+                    .serv-img-bg {
+                        background-color: $primary_img_bg;
+                    }
+                    p {
+                        color: $white_color;
+                    }
+                }
+                p {
+                    padding-top: 2.6875rem;
+                    font-size: 1.25rem;
+                }
+            }
+        }
+        .service-img-sec {
+            padding-top: 4.375rem; 
+            position: relative;
+            .service-img-top {
+                background-image: url('../../assets/images/dental_care_service.svg');
+                height: 255px;
+                width: 100%;
+                position: relative;
+                z-index: 999;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                background-repeat: repeat;
+                background-position: center;
+                background-size: cover;
+            }  
+            .custom-card {
+                border: none;
+                border-radius: 20px;
+                background-color: $white_color;
+                box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+                .card-body {
+                    padding: 2.5rem 3rem;
+                    .card-title {
+                        font-size: 1.5rem;
+                    }
+                    .content-sub-light {
+                        padding-bottom: 2.375rem;
+                    }
+                }
+                .service-count-badge {
+                    width: 86px;
+                    height: 48px;
+                    background-color: $primary_button_color;
+                    border-radius: 30px;
+                    position: absolute;
+                    bottom: -24px;
+                    right: 35px;
+                    text-align: center;
+                    img {
+                        margin-right: 11px;
+                    }
+                    .service-count {
+                        color: $white_color;
+                        font-size: 1.5rem;
+                        vertical-align: middle;
+                        display: inline-block;
+                        margin-top: 6px;
+                    }
+                }
+            }
+            .service-banner-style {
+                position: absolute;
+                top: 27px;
+                right: -53px;
+            }
+        }
+    }
+    /*****************************Features Styles Starts here*****************************/
+    .features-container {
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+        position: relative;
+        .row {
+            padding: 0;
+        }
+        .features-cnt-section {
+            padding: 0;
+            padding-right: 7%;
+            .content-ttl-prefix {
+                padding-bottom: 2.3125rem;
+            }
+            .content-ttl-sml {
+                padding-bottom: 1.5rem;
+            }
+        }
+        .features-img-section {
+            background-image: url('../../assets/images/features_img.svg');
+            height: 496px;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            border-radius: 20px;
+            .features-img-top-sec {
+                position: absolute;
+                top: -45px;
+                left: -65px;
+                z-index: -1;
+            }
+        }
+        .features-bottom-row {
+            background-color: $yellow_bg;
+            padding: 4%;
+            border-radius: 20px;
+            display: flex;
+            position: absolute;
+            width: 70%;
+            bottom: 90px;
+            z-index: -1;
+        }
+        .ft-img-sec, .ft-cnt-sec {
+            display: inline-block;
+        }
+        .ft-img-sec {
+            width: 102px;
+            height: 102px;
+            background-color: $primary_button_color;
+            text-align: center;
+            border-radius: 50%;
+            position: absolute;
+            top: 45px;
+        }
+        .ft-cnt-sec {
+            padding-left: 2%;
+            width: 50%;
+            .ft-cnt-ttl {
+                font-size: 1.5rem;
+                padding-left: 8.1875rem;
+            }
+            .ft-cnt-txt {
+                opacity: 0.5019607843137255;
+                padding-bottom: 2.375rem;
+                padding-left: 8.3125rem;
+            }
+        }
+    }
+    /*****************************About Styles Starts here*****************************/
+    .time-table-container {
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+        background-color: $opening_hours_bg;
+        .time-table-img-sec {
+            position: relative;
+            z-index: 9999;
+            .time-table-top-sec-lg {
+                position: absolute;
+                top: 26px;
+                left: -45px;
+                z-index: -1;
+            }
+            .time-table-img-sm, .time-table-top-sec-sm {
+                display: none;
+            }
+        }
+        .time-table-cnt-sec {
+            padding: 0.625rem 0 0.625rem 9%;
+            .content-ttl-prefix {
+                padding-bottom: 2.3125rem;
+            }
+            .content-ttl-sml {
+                padding-bottom: 1.5rem;
+            }
+            .content-sub-light {
+                padding-top: 1.5rem;
+            }
+            .time-table-btn {
+                padding-top: 3rem;
+            }
+        }
+    }
+    /*****************************Team Styles Starts here*****************************/
+    .team-container {
+        padding-top: 4.75rem;
+        padding-bottom: 6rem;
+        .team-mbr-sec {
+            padding-bottom: 3rem;   
+            position: relative;
+            .team-mbr-card {
+                background-color: $opening_hours_bg;
+                margin-top: 2.375rem;
+                /*flex: 0 0 31%;
+                max-width: 31%;*/
+                width: 325px;
+                min-width: 325px;
+                margin-right: 30px;
+                border-radius: 20px;
+                padding: 2rem 1rem;
+                text-align: center;
+                .team-mbr-img {
+                    img {
+                        width: 214px;
+                        height: 214px;
+                        border-radius: 50%;
+                        border: 8px solid $team_img_border;
+                    }
+                }
+                .team-mbr-name {
+                    font-size: 1.5rem;
+                    padding-top: 1.5rem;
+                }
+                .social-icons-list {
+                    padding-top: 1.75rem;
+                    li {
+                        a {
+                            background-color: $social_icon_bg;
+                            width: 48px;
+                            height: 48px;
+                            border-radius: 50%;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+            .team-mbr-card:last-child {
+                margin-right: 0;
+            }
+            .team-card-style {
+                position: absolute;
+                right: -35px;
+                z-index: -1;
+                top: 0;
+            }
+        }
+    }
+    /*****************************Stat Styles Starts here*****************************/
+    .stat-container {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        background-color: $primary_button_color;
+        .stat-img {
+            background-color: $primary_img_bg;
+            border-radius: 50%;
+            width: 134px;
+            height: 134px;
+            background-repeat: no-repeat;
+            margin: 0 auto;
+            background-position: center;
+        }
+        .content-ttl, .content-sub {
+            color: $white_color;
+        }
+        .content-ttl {
+            padding: 3.375rem 0 2.1875rem;
+        }
+    }
+    /*****************************Testimonials Styles Starts here*****************************/
+    .testimonials-container {
+        padding-top: 5.6875rem;
+        padding-bottom: 5rem;
+        background-color: $opening_hours_bg;
+        .content-ttl-sml {
+            padding-bottom: 2.6875rem;
+        }
+        .testimonial-card-row {
+            position: relative;
+            padding-bottom: 2rem;
+        }
+        .testimonial-card {
+            position: relative;
+            z-index: 1;
+            background-color: $white_color;
+            padding: 2rem;
+            border-radius: 20px;
+            flex: 0 0 48%;
+            max-width: 48%;
+            margin-right: 2%;
+            box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+            &:last-child {
+                margin-right: 0;
+            }
+            .testimonial-symbol {
+                background-color: $opening_hours_bg;
+                width: 102px;
+                height: 102px;
+                border-radius: 50%;
+                background-image: url('../../assets/images/testimonial_colon.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .content-sub-light {
+                padding: 1.25rem 0 3.375rem;
+            }
+            .testi-user-sec {
+                display: flex;
+                align-items: baseline;
+                .testi-img-sec {
+                    width: 102px;
+                    height: 102px;
+                    text-align: center;
+                    border-radius: 50%;
+                }
+                .testi-desc-sec {
+                    padding-left: 1.625rem;
+                    width: 200px;
+                    .testi-cnt-ttl {
+                        font-size: 1.5rem;
+                    }
+                    .content-sub-light {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+        .testimonials-card-style {
+            position: absolute;
+            top: -40px;
+            left: -65px;     
+        }
+    }
+    /*****************************Special Styles Starts here*****************************/
+    .special-container {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        background-color: $primary_button_color;
+        .spl-main-sec {
+            .spl-img-sec {
+                width: 176px;
+                height: 176px;
+                text-align: center;
+                border-radius: 50%;
+                background-color: $primary_img_bg;
+            }
+            .spl-desc-sec {
+                padding-left: 1.625rem;
+                width: 300px;
+            } 
+        }
+        .spl-form-container {
+            background-color: $yellow_bg;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .form-inline {
+                justify-content: center;
+            }
+            .form-control {
+                margin-right: 1rem;
+                margin-bottom: 0.625rem;
+            }
+            .btn {
+                margin-bottom: 0.625rem;
+            }
+        }
+    }
+    /*****************************Blog Styles Starts here*****************************/
+    .blog-container {
+        padding-top: 5.6875rem;
+        padding-bottom: 5rem;
+        .content-ttl-prefix {
+            padding-bottom: 2.125rem;
+        }
+        .blog {
+            margin-top: 2.375rem;
+            margin-right: 25px;
+            overflow: hidden;
+            width: 325px;
+            min-width: 325px;
+            display: flex;
+            justify-content: center;
+        }
+        .blog-sub-card {
+            margin-right: 0;
+        }
+        .blog-card-container {
+            position: relative;
+        }
+        .blog-card-style {
+            position: absolute;
+            top: 0;
+            right: -70px;
+            z-index: -1;
+        }
+        .blog-main-card {
+            border-radius: 20px;
+            position: relative;
+            img {
+                width:370px;
+                height: 480px;
+                border-radius: 20px;
+            }
+            .top-left {
+                text-transform: uppercase;
+                position: absolute;
+                top: 2.5rem;
+                left: 2.5rem;
+                font-size: 0.875rem;
+                font-weight: 600;
+            }
+            .bottom-center {
+                position: absolute;
+                bottom: 2.5rem;
+                left: 2.5rem;
+                margin-right: 2.5rem;
+                font-weight: 700;
+                .content-sub {
+                    padding-bottom: 1.5625rem;
+                }
+            }
+        }
+        .blog-sub-card {
+            .row {
+                width: 100%;
+            }
+            .blog-sub {
+                height: 224px;
+                background-color: $opening_hours_bg;
+                border-radius: 20px;
+                padding: 2.5rem;
+                &:first-child {
+                    margin-bottom: 2rem;
+                }
+                .top-left {
+                    font-size: 0.75rem;
+                    padding-bottom: 2rem;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                }
+                .content-sub {
+                    padding-bottom: 1.5625rem;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    /*****************************FAQ Styles Starts here*****************************/
+    .faq-container {
+        padding-top: 5.6875rem;
+        padding-bottom: 5rem;
+        background-color: $opening_hours_bg;
+        .faq-accordion-sec {
+            position: relative;
+            .accordion {
+                cursor: pointer;
+                padding:0;
+                width: 100%;
+                border: none;
+                text-align: left;
+                transition: 0.4s;
+                border-radius: 20px;
+                background-color: transparent;
+                font-size: 1.5rem;
+                position: relative;
+            }
+            .faq-card {
+                padding: 3.25rem 3rem;
+                margin-bottom: 1rem;
+                background-color: $white_color;
+                border-radius: 20px;
+                position: relative;
+                z-index: 1;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &:first-child {
+                    background-color: $primary_button_color;
+                    color: $white_color;
+                    .accordion {
+                        color: $white_color;
+                        &:after, .active:after {
+                            color: $primary_font_color;
+                        }
+                    }
+                    .panel {
+                        background-color: $primary_button_color;
+                        p {
+                            color: $white_color;
+                        }
+                    }
+                }
+            }
+            .accordion:after {
+                content: '';
+                background-image: url('../../assets/images/expand.svg');
+                color: $primary_font_color;
+                width: 15px;
+                height: 12px;
+                position: absolute;
+                right: 0;
+                top: 15px;
+                background-repeat: no-repeat;
+            }
+            .active:after {
+                background-image: url('../../assets/images/collapse.svg');
+            }
+            .panel {
+                padding:0;
+                background-color: $white_color;
+                /*max-height: 0;*/
+                display: none;
+                overflow: hidden;
+                transition: max-height 0.2s ease-out;
+                p {
+                    margin-top: 1rem;
+                }
+                &.panel-active {
+                    display: block;
+                }
+            }
+        }
+        .faq-card-style {
+            position: absolute;
+            top: -42px;
+            left: -50px;
+        }
+        .faq-cnt-sec {
+            padding: 0.625rem 0 0.625rem 6.25rem;
+            .content-ttl-prefix {
+                padding-bottom: 2.3125rem;
+            }
+            .content-ttl-sml {
+                padding-bottom: 1.5rem;
+            }
+            .content-sub-light {
+                padding-top: 1.5rem;
+            }
+        }
+    }
+    /*****************************Contact Us Styles Starts here*****************************/
+    .contact-us-container {
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+        .content-ttl-prefix {
+            padding-bottom: 1.5rem;
+        }
+        .content-ttl-sml {
+            padding-bottom: 1.6875rem;
+        }
+        .contact-form {
+            .form-control {
+                width: 75%;
+                margin-bottom: 1rem;
+            }
+            textarea {
+                &.form-control {
+                    height: 100px;
+                    margin-bottom: 2rem;
+                } 
+            }
+        }
+        .contact-map-sec {
+            position: relative;
+            background-image: url('../../assets/images/contact_map.png');
+            background-repeat: no-repeat;
+            border: 8px solid $primary_button_color;
+            background-size: cover;
+            border-radius: 20px;
+            text-align: center;
+            .contact-card-style {
+                position: absolute;
+                top: -50px;
+                right: -75px;
+                z-index: -1;
+            }
+        }
+    }
+}
+
+
+/********************Mobile View********************************************/
+@media (max-width: 767px) {
+    .main-content-wrap {
+        /*****************Opening Hours Styles*****************/
+        .opening-hours-container {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            overflow-x: auto;
+            flex-wrap: nowrap !important;
+        }
+        /*****************About Styles*****************/
+        .about-container {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            .about-video-sec {
+                background-image: url('../../assets/images/mobile/about.png');
+                width: 445px;
+                height: 307px;
+                border-radius: 0;
+                .about-play-bg {
+                    top: 35%;
+                }
+                .about-white-bg {
+                    top: 40%;
+                }
+                .about-top-sec {
+                    top: -39px;
+                    left: -13px;
+                }
+                .about-play-btn {
+                    top: 52%;
+                }
+            }
+            .about-cnt-sec {
+                padding: 2.9375rem 0 0;
+                .content-ttl {
+                    padding-bottom: 1.5rem;
+                }
+                .about-btn {
+                    padding-top: 2.375rem;
+                }
+            }
+        }
+        /**************************Service Styles************************/
+        .services-container {
+            .service-card-sec {
+                padding-top: 2.5rem;
+                .service-card-main {
+                    flex-wrap: nowrap !important;
+                    overflow-x: auto;
+                }
+            }
+            .service-img-sec {
+                padding: 0;
+                .service-banner-style {
+                    display: none;
+                }
+                .custom-card {
+                    .service-count-badge {
+                        .service-count {
+                            margin-top: 0;
+                        }
+                    }
+                }
+            }
+        }
+        /*****************************Time Table Styles Starts here*****************************/
+        .time-table-container {
+            padding-top: 5.625rem;
+            padding-bottom: 5rem;
+            .time-table-img-sec {
+                .time-table-img-lg, .time-table-top-sec-lg {
+                    display: none;
+                }
+                .time-table-img-sm, .time-table-top-sec-sm {
+                    display: block;
+                }
+                .time-table-top-sec-sm {
+                    position: absolute;
+                    top: 17px;
+                    left: -14px;
+                    z-index: -1;
+                }
+            }
+            .time-table-cnt-sec {
+                .content-ttl-sml {
+                    padding-bottom: 1.3125rem;
+                }
+            }
+        }
+        /*****************************Team Styles Starts here*****************************/
+        .team-container {
+            padding-top: 5.75rem;
+            padding-bottom: 5rem;
+            .content-ttl-sml {
+                padding-bottom: 3.5rem;
+            }
+            .team-mbr-sec {
+                justify-content: center;
+                padding-bottom: 4rem;
+                .team-mbr-card {
+                    margin-top: 10px;
+                    margin-right: 0;
+                }
+                .team-card-style {
+                    right: -10px;
+                    top: unset;
+                    bottom: 20px;
+                }
+            }
+        }
+        /*****************************Stat Styles Starts here*****************************/
+        .stat-container {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            > div {
+              padding-bottom: 3.1875rem;  
+            }
+        }
+        /*****************************Testimonial Styles Starts here*****************************/
+        .testimonials-container {
+            padding-top: 5.6875rem;
+            padding-bottom: 5rem;
+            .testimonials-card-style {
+                top: -40px;
+                left: -13px;
+            }
+            .testimonial-card {
+                flex: 0 0 100%;
+                max-width: 100%;
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+        }
+        /*****************************Special Styles Starts here*****************************/
+        .special-container {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            .spl-main-sec {
+                justify-content: center;
+                .spl-desc-sec {
+                    text-align: center;
+                    padding-left: 0;
+                    .content-ttl-prefix {
+                        padding-top: 3.6875rem;
+                        padding-bottom: 0.8125rem;
+                    }
+                    .content-ttl-sml {
+                        padding-bottom: 2.5rem;
+                    }
+                }
+            }
+            .spl-form-container {
+                padding: 4rem 1rem;
+                .spl-btn-sec {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+        /*****************************Our Blog Styles Starts here*****************************/
+        .blog-container {
+            padding-top: 5.6875rem;
+            padding-bottom: 5rem;
+            .content-ttl-prefix {
+                padding-bottom: 1.75rem;
+            }
+            .content-ttl-sml {
+                margin-bottom: 3.5rem
+            }
+            .blog {
+                margin-top: 0;
+                margin-bottom: 10px;
+                margin-right: 0;
+            }
+            .blog-card-container {
+                justify-content: center;
+            }
+            .blog-card-style {
+                top: unset;
+                right: -10px;
+                bottom: -30px;
+            }
+        }
+        /*****************************FAQ Styles Starts here*****************************/
+        .faq-container {
+            padding-top: 5rem;
+            padding-bottom: 5.375rem;
+            .faq-accordion-sec {
+                padding: 0;
+                padding-bottom: 5.75rem;
+                .faq-card {
+                    padding: 2.5rem 2rem;
+                }
+            }
+            .faq-card-style {
+                left: -60px;
+            }
+            .faq-cnt-sec {
+                padding: 0;
+                .content-ttl-prefix {
+                    padding-bottom: 1.8125rem;
+                }
+            }
+        }
+        /*****************************Contact Us Styles Starts here*****************************/
+        .contact-us-container {
+            padding-top: 5.75rem;
+            padding-bottom: 6.0625rem;
+            .contact-form-sec {
+                padding: 0;
+            }
+            .content-ttl-prefix {
+                padding-bottom: 1.9375rem;
+            }
+            .contact-form {
+                .form-control {
+                    width: 100%;
+                }
+            }
+            .contact-map-sec {
+                margin-top: 3.75rem;
+                height: 496px;
+                .contact-card-style {
+                    right: -20px;
+                }
+            }
+        }
+        .banner-container {
+            padding-left: 1rem;
+        }
+    }
+}
+
+/*****************************Tab View**************************************/
+@media (min-width: 768px) and (max-width: 991px) {
+    .main-content-wrap {
+        /***************About Styles******************/
+        .about-container {
+            .about-cnt-sec {
+                padding-left: 2rem;
+            }
+        }
+        /****************FAQ Styles*****************/
+        .faq-container {
+            .faq-cnt-sec {
+                padding-left: 2rem;
+            }
+        }
+        .time-table-container, .contact-us-container, .about-container {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+        .banner-container {
+            padding-left: 2rem;
+        }
+    }
+}
+
+@media (min-width: 651px) and (max-width: 991px) {
+    .main-content-wrap {
+        /*****************************Team Styles Starts here*****************************/
+        .team-container {
+            .team-mbr-sec {
+                .team-card-style {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+    .main-content-wrap {
+        .content-ttl {
+            font-size: 3rem;
+            line-height: 3rem;
+        }
+        .time-table-container {
+            .time-table-img-lg {
+                height: 350px;
+            }  
+        }
+        .features-container {
+            .ft-cnt-sec {
+                .ft-cnt-txt {
+                    padding-left: 0;
+                    margin-top: 2rem;
+                }
+            }
+            .ft-cnt-ttl {
+                padding-left: 7.188rem;
+            }
+            .ft-img-sec {
+                top: 14px;
+            }
+            .features-bottom-row {
+                bottom: 25px;
+            }
+        }
+        .faq-container {
+            .faq-accordion-sec {
+                .faq-card {
+                    padding: 2rem;
+                }
+ 
+            }
+        }
+        /*******Banner Styles**************************/
+        .banner-container {
+            .banner-img-sec {
+                .banner-bg-sm {
+                    height: 70%;
+                    width: 60%;
+                }
+                .banner-bg-mix-sm {
+                    width: 28%;
+                    height: 30%;
+                }
+            }
+        }
+    }
+}
+
+/******************************Mobile & Tab View************************************/
+@media (max-width: 991px) {
+    .main-content-wrap {
+        .content-ttl {
+            font-size: 3.5rem;
+            line-height: 3.5rem;
+        }
+        .content-ttl-sml {
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+        }
+        .content-ttl-prefix {
+            padding-bottom: 1.9375rem !important;
+        }
+        /*****************************Features Styles Starts here*****************************/
+        .features-container {
+            padding-top: 5.75rem;
+            padding-bottom: 7.1875rem;
+            .features-cnt-section {
+                .content-ttl-sml {
+                    padding-bottom: 0.8125rem;
+                }
+            }
+            .features-img-section {
+                margin-top: 380px;
+                background-image: url('../../assets/images/mobile/features_img.png');
+                height: 320px;
+                border-radius: 0;
+                .features-img-top-sec {
+                    top: unset;
+                    left: unset;
+                    right: -10px;
+                    bottom: -41px;
+                }
+            }
+            .features-bottom-row {
+                width: auto;
+                top: 320px;
+                margin-right: 1rem;
+                height: 380px;
+                padding: 3rem 1rem;
+            }
+            .ft-cnt-sec {
+                width: 100%;
+                .ft-cnt-txt {
+                    padding-top: 2rem;
+                    padding-left:0;
+                }
+                .ft-cnt-ttl {
+                    width: 300px;
+                }
+            }
+            .ft-img-sec {
+                top: 40px;
+            }
+        }
+        .time-table-container {
+            .time-table-img-sec {
+                padding-bottom: 5rem;
+            }
+        }
+        /*******Banner Styles**************************/
+        .banner-container {
+            padding-top: 3.125rem;
+            .banner-content-sec {
+                padding: 0;
+            }
+            .banner-img-sec {
+                padding: 0;
+                padding-bottom: 3.75rem;
+                align-items: center;
+                height: auto;
+                overflow: hidden;
+                .banner-img-main-sm, .banner-bg-sm, .banner-bg-mix-sm {
+                    display: block;
+                }
+                .banner-img-main-lg {
+                    display: none;
+                }
+                .banner-img-main-sm {
+                    z-index: 999;
+                }
+                .banner-bg-sm {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    height: 70%;
+                    width: 60%;
+                    top:unset;
+                }
+                .banner-bg-mix-sm {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 70px;
+                    height: 75px;
+                    background-color: $primary_img_bg;
+                    border-top-left-radius: 20px;
+                    top: unset;
+                    border-bottom-left-radius: 0;
+                }
+            }
+        }
+    }
+}
+
+/******************Large Screen*************************/
+@media (min-width: 1201px) {
+    .main-content-wrap {
+        .opening-hours-container {
+            .op-card {
+                width: calc(25% - 30px);
+                min-width: calc(25% - 30px);
+                h3 {
+                    margin-right: 1rem;
+                }
+            }
+        }
+        .services-container {
+            .service-card-sec {
+                .service-card {
+                    width: calc(33% - 1.375rem);
+                    min-width: calc(32% - 1.375rem);
+                }
+            }
+        }
+        .team-container {
+            .team-mbr-sec {
+                .team-mbr-card {
+                    width: calc(32% - 30px);
+                    min-width: calc(32% - 30px);
+                }
+            }
+        }
+        .blog-container {
+            .blog {
+                width: calc(33.333% - 25px);
+                min-width: calc(33.333% - 25px);
+            }
+        }
+    }
+}

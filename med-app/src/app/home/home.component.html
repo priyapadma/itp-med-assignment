@@ -1,0 +1,358 @@
+<div class="main-content-wrap">
+    <!--------------------------Top banner Section Starts here------------------------------------>
+    <div class="row banner-container">
+        <div class="col-sm-12 col-lg-4 banner-content-sec">
+            <p class="content-ttl-prefix">{{bannerBlockDataArr.blockName}}</p>
+            <h1 class="content-ttl">{{bannerBlockDataArr.blockTtl}}</h1>
+            <p class="content-sub">{{bannerBlockDataArr.blockTxt}}</p>
+            <div class="banner-btn">
+                <button class="btn btn-primary">{{bannerBlockDataArr.blockBtnLnk}}</button>
+            </div>
+        </div>
+        <div class="col-sm-12 col-lg-8 banner-img-sec">
+            <img src="assets/images/banner_main_img.png" class="banner-img-main-lg"/>
+            <img src="assets/images/mobile/banner_main_img.png" class="banner-img-main-sm"/>
+            <img src="assets/images/mobile/banner_main_bg.png" class="banner-bg-sm"/>
+            <div class="banner-bg-mix-sm"></div>
+        </div>
+    </div>
+    <!-------------------------Opening Hours Section Starts here----------------------------------->
+    <div class="opening-hours-container custom-container d-flex flex-wrap justify-content-md-center justify-content-lg-between">
+        <div class="op-card primary">
+            <div class="d-flex">
+                <h3>
+                    {{openingHoursData.mainTtl}}
+                </h3>
+                <div>
+                    <img src="assets/images/{{openingHoursData.mainIcon}}" alt="{{openingHoursData.mainTtl}}"/>
+                </div>
+            </div>
+            <div class="op-sub-cont first">
+                {{openingHoursData.startDay}} - {{openingHoursData.endDay}}:
+            </div>
+            <div class="op-main-cont first">
+                {{openingHoursData.startTime}} - {{openingHoursData.endTime}}
+            </div>
+            <div class="op-sub-cont sec">
+                Address
+            </div>
+            <div class="op-main-cont sec">
+                {{openingHoursData.address}}
+            </div>
+        </div>
+        <div class="op-card" *ngFor="let mainData of openingHoursData.results; let in = index">
+            <div class="d-flex">
+                <h3>
+                    {{mainData.title}}
+                </h3>
+                <div>
+                    <img src="assets/images/{{mainData.iconName}}" alt="{{mainData.title}}"/>
+                </div>
+            </div>
+            <p>{{mainData.content}}</p>
+            <button class="btn btn-primary">{{mainData.btnName}}</button>
+        </div>
+    </div>
+    <!------------------------About Section Starts here----------------->
+    <div class="row about-container custom-container">
+        <div class="col-sm-12 col-md-6 about-video-sec">
+            <img src="assets/images/banner_style.png" class="about-top-sec"/>
+            <img src="assets/images/play_bg.svg" class="about-play-bg"/>
+            <img src="assets/images/oval_white.svg" class="about-white-bg"/>
+            <img src="assets/images/triangle_play.svg" class="about-play-btn"/>
+        </div>
+        <div class="col-sm-12 col-md-6 about-cnt-sec">
+            <p class="content-ttl-prefix">{{aboutBlockDataArr.blockName}}</p>
+            <h1 class="content-ttl-sml">{{aboutBlockDataArr.blockTtl}}</h1>
+            <p class="content-sub">{{aboutBlockDataArr.blockTxt}}</p>
+            <p class="content-sub-light">
+                {{aboutBlockDataArr.blockSecTxt}}
+            </p>
+            <div class="about-btn">
+                <button class="btn btn-gray">{{aboutBlockDataArr.blockBtnLnk}}</button>
+            </div>
+        </div>
+    </div>
+    <!------------------------Services Section Starts here----------------->
+    <div class="services-container custom-container">
+        <p class="text-center content-ttl-prefix">{{serviceBlockDataArr.blockName}}</p>
+        <h1 class="text-center content-ttl-sml">{{serviceBlockDataArr.blockTtl}}</h1>
+        <div class="row">
+            <div class="col-sm-12 col-lg-6 service-card-sec">
+                <div class="service-card-main d-flex flex-wrap align-items-center justify-content-md-center justify-content-lg-between">
+                    <ng-container *ngFor="let medService of medServiceData.results; let i = index">
+                        <div class="service-card" [ngClass]="i===0 ? 'primary' : ''">
+                            <div class="serv-img-bg">
+                                <span class="helper"></span>
+                                <img src="assets/images/{{medService.iconName}}" alt="{{medService.title}}"/>
+                            </div>
+                            <p class="text-center">{{medService.title}}</p>
+                        </div>
+                    </ng-container>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-6 service-img-sec">
+                <div class="custom-card">
+                    <div class="service-img-top">
+                        <div class="service-count-badge">
+                            <span class="helper"></span>
+                            <img src="assets/images/user.svg" alt="User"/>
+                            <span class="service-count">{{medServiceData.mainCount}}</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title">{{medServiceData.mainTtl}}</h1>
+                        <p class="content-sub-light">{{medServiceData.mainTxt}}</p>
+                        <button class="btn btn-gray">{{medServiceData.mainBtnName}}</button>
+                    </div>
+                </div>
+                <img src="assets/images/banner_style.png" class="service-banner-style" alt=""/>
+            </div>
+        </div>
+    </div>
+    <!------------------------Features Section Starts here----------------->
+    <div class="features-container custom-container">
+        <div class="row features-top-row">
+            <div class="col-sm-12 col-lg-6 features-cnt-section">
+                <p class="content-ttl-prefix">{{featuresBlockDataArr.blockName}}</p>
+                <h1 class="content-ttl-sml">{{featuresBlockDataArr.blockTtl}}</h1>
+                <p class="content-sub">{{featuresBlockDataArr.blockTxt}}</p>
+            </div>
+            <div class="col-sm-12 col-lg-6 features-img-section">
+                <img src="assets/images/banner_style.png" class="features-img-top-sec"/>
+            </div>
+        </div>
+        <div class="features-bottom-row">
+            <div class="ft-cnt-sec">
+                <div class="ft-cnt-main">
+                    <div class="ft-img-sec">
+                        <span class="helper"></span>
+                        <img src="assets/images/{{featuresData.mainIcon}}" alt="{{featuresData.mainTTl}}"/>
+                    </div>
+                    <p class="ft-cnt-ttl">{{featuresData.mainTTl}}</p>
+                </div>
+                <p class="ft-cnt-txt">{{featuresData.mainTxt}}</p>
+                <button class="btn btn-secondary ft-cnt-btn">{{featuresData.mainBtnName}}</button>
+            </div>
+        </div>
+    </div>
+    <!------------------------Time Table Section Starts here----------------->
+    <div class="row time-table-container custom-container">
+        <div class="col-sm-12 col-lg-6 time-table-img-sec">
+            <img src="assets/images/calendar.svg" alt="Calendar" class="time-table-img-lg"/>
+            <img src="assets/images/mobile/calendar.png" alt="Calendar" class="time-table-img-sm"/>
+            <img src="assets/images/banner_style.png" class="time-table-top-sec-lg"/>
+            <img src="assets/images/mobile/shape_img.png" class="time-table-top-sec-sm"/>
+        </div>
+        <div class="col-sm-12 col-lg-6 time-table-cnt-sec">
+            <p class="content-ttl-prefix">{{timeTblBlockDataArr.blockName}}</p>
+            <h1 class="content-ttl-sml">{{timeTblBlockDataArr.blockTtl}}</h1>
+            <p class="content-sub">{{timeTblBlockDataArr.blockTxt}}</p>
+            <p class="content-sub-light">
+                {{timeTblBlockDataArr.blockSecTxt}}
+            </p>
+            <div class="time-table-btn">
+                <button class="btn btn-primary">{{timeTblBlockDataArr.blockBtnLnk}}</button>
+            </div>
+        </div>
+    </div>
+    <!------------------------Team Section Starts here----------------->
+    <div class="team-container custom-container">
+        <p class="text-center content-ttl-prefix">{{teamBlockDataArr.blockName}}</p>
+        <h1 class="text-center content-ttl-sml">{{teamBlockDataArr.blockTtl}}</h1>
+        <div class="team-mbr-sec d-flex flex-wrap align-items-center justify-content-md-center justify-content-lg-between">
+            <div class="team-mbr-card" *ngFor="let ourDoctor of ourDoctorsDataArr; let in = index">
+                <div class="team-mbr-img">
+                    <img src="assets/images/{{ourDoctor.img}}" alt="{{ourDoctor.name}}"/>
+                </div>
+                <p class="team-mbr-name">{{ourDoctor.name}}</p>
+                <p class="content-sub-light">{{ourDoctor.dept}}</p>
+                <div class="social-icons-sec">
+                    <ul class="list-unstyled list-inline social-icons-list">
+                        <li class="list-inline-item">
+                            <a routerLink="{{ourDoctor.fbLnk}}">
+                                <span class="helper"></span>
+                                <img alt="Facebook" src="assets/images/facebook_pink.svg">
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a routerLink="{{ourDoctor.twtLnk}}">
+                                <span class="helper"></span>
+                                <img alt="Twitter" src="assets/images/twitter_pink.svg">
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a routerLink="{{ourDoctor.instaLnk}}">
+                                <span class="helper"></span>
+                                <img alt="Instagram" src="assets/images/instagram_pink.svg">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <img src="assets/images/banner_style.png" class="team-card-style"/>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <button class="btn btn-primary">{{teamBlockDataArr.blockBtnLnk}}</button>
+            </div>
+        </div>
+    </div>
+    <!------------------------Stat Section Starts here----------------->
+    <div class="row stat-container custom-container">
+        <div class="col-sm-12 col-md-3 text-center" *ngFor="let stats of statsDataArr; let in = index">
+            <div class="stat-img">
+                <span class="helper"></span>
+                <img src="assets/images/{{stats.statIcon}}"/>
+            </div>
+            <h1 class="content-ttl-sml text-white">{{stats.statNumber}}</h1>
+            <p class="content-sub text-white">{{stats.statName}}</p>
+        </div>
+    </div>
+    <!------------------------Testimonials Section Starts here----------------->
+    <div class="testimonials-container custom-container">
+        <p class="text-center content-ttl-prefix">{{testimonialBlockDataArr.blockName}}</p>
+        <h1 class="text-center content-ttl-sml">{{testimonialBlockDataArr.blockTtl}}</h1>
+        <div class="row testimonial-card-row">
+            <div class="col-sm-12 col-md-6 testimonial-card" *ngFor="let testimonial of testimonialDataArr; let in = index">
+                <div class="testimonial-symbol"></div>
+                <p class="content-sub-light">
+                    {{testimonial.feedback}}
+                </p>
+                <div class="testi-user-sec">
+                    <div class="testi-img-sec">
+                        <img src="assets/images/{{testimonial.profileImgName}}">
+                    </div>
+                    <div class="testi-desc-sec">
+                        <p class="testi-cnt-ttl">{{testimonial.name}}</p>
+                        <p class="content-sub-light">{{testimonial.occupation}}</p>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/images/banner_style.png" class="testimonials-card-style"/>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <button class="btn btn-primary">{{testimonialBlockDataArr.blockBtnLnk}}</button>
+            </div>
+        </div>
+    </div>
+    <!------------------------Special Section Starts here----------------->
+    <div class="row special-container custom-container">
+        <div class="col-sm-12 col-md-6">
+            <div class="spl-main-sec d-flex align-items-center flex-wrap">
+                <div class="spl-img-sec">
+                    <span class="helper"></span>
+                    <img src="assets/images/special.svg">
+                </div>
+                <div class="spl-desc-sec">
+                    <p class="content-ttl-prefix text-white">{{specialBlockDataArr.blockName}}</p>
+                    <p class="content-ttl-sml text-white">{{specialBlockDataArr.blockTtl}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 spl-form-container">
+            <form class="form-inline">
+                <div class="form-group">
+                    <input type="tel" placeholder="Your phone" class="form-control">
+                </div>
+                <div class="spl-btn-sec">
+                    <button class="btn btn-secondary">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!------------------------Blog Section Starts here----------------->
+    <div class="blog-container custom-container">
+        <p class="text-center content-ttl-prefix">{{blogBlockDataArr.blockName}}</p>
+        <h1 class="text-center content-ttl-sml">{{blogBlockDataArr.blockTtl}}</h1>
+        <div class="d-flex align-items-center flex-wrap blog-card-container justify-content-md-center justify-content-lg-between">
+            <div class="blog blog-main-card">
+                <img src="assets/images/{{ourBlogDataArr[0].blogImg}}" alt="{{ourBlogDataArr[0].name}}"/>
+                <p class="top-left text-white">{{ourBlogDataArr[0].category}}</p>
+                <div class="bottom-center">
+                    <p class="content-sub">
+                        <a routerLink="{{ourBlogDataArr[0].blogLnk}}" class="text-white content-sub">{{ourBlogDataArr[0].name}}</a>
+                    </p>
+                    <p class="content-sub-light text-white">{{ourBlogDataArr[0].publishedOn}}</p>
+                </div>
+            </div>
+            <div class="blog blog-main-card">
+                <img src="assets/images/{{ourBlogDataArr[1].blogImg}}" alt="{{ourBlogDataArr[1].name}}"/>
+                <p class="top-left text-white">{{ourBlogDataArr[1].category}}</p>
+                <div class="bottom-center">
+                    <p class="content-sub">
+                        <a routerLink="{{ourBlogDataArr[1].blogLnk}}" class="text-white content-sub">{{ourBlogDataArr[1].name}}</a>
+                    </p>
+                    <p class="content-sub-light text-white">{{ourBlogDataArr[1].publishedOn}}</p>
+                </div>
+            </div>
+            <div class="blog blog-sub-card">
+                <div class="row">
+                    <div class="col-sm-12 blog-sub">
+                        <p class="top-left">{{ourBlogDataArr[2].category}}</p>
+                        <p class="content-sub">
+                            <a routerLink="{{ourBlogDataArr[2].blogLnk}}" class="content-sub text-black">
+                                {{ourBlogDataArr[2].name}}
+                            </a>
+                        </p>
+                        <p class="content-sub-light">{{ourBlogDataArr[2].publishedOn}}</p>
+                    </div>
+                    <div class="col-sm-12 blog-sub">
+                        <p class="top-left">{{ourBlogDataArr[3].category}}</p>
+                        <p class="content-sub">
+                            <a routerLink="{{ourBlogDataArr[3].blogLnk}}" class="content-sub text-black">
+                                {{ourBlogDataArr[3].name}}
+                            </a>
+                        </p>
+                        <p class="content-sub-light">{{ourBlogDataArr[3].publishedOn}}</p>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/images/banner_style.png" class="blog-card-style"/>
+        </div>
+        <div class="row btn-container">
+            <div class="col-sm-12 text-center">
+                <button class="btn btn-primary">{{blogBlockDataArr.blockBtnLnk}}</button>
+            </div>
+        </div>
+    </div>
+    <!------------------------FAQ Section Starts here----------------->
+    <div class="faq-container row custom-container">
+        <div class="col-sm-12 col-md-6 faq-accordion-sec">
+            <div *ngFor="let item of faqDataArr;let i = index;" class="faq-card">
+                <button class="accordion" [class.active]="i === 0" (click)="toggleAccordian($event, i)"> {{item.qus}} </button>
+                <div class="panel" [class.panel-active]="i === 0">
+                    <p class="content-sub">{{item.ans}} </p>
+                </div>
+            </div>
+            <img src="assets/images/banner_style.png" class="faq-card-style"/>
+        </div>
+        <div class="col-sm-12 col-md-6 faq-cnt-sec">
+            <p class="content-ttl-prefix">{{faqBlockDataArr.blockName}}</p>
+            <h1 class="content-ttl-sml">{{faqBlockDataArr.blockTtl}}</h1>
+            <p class="content-sub">{{faqBlockDataArr.blockTxt}}</p>
+            <p class="content-sub-light">
+                {{faqBlockDataArr.blockSecTxt}}
+            </p>
+        </div>
+    </div>
+    <!------------------------Contact Us Section Starts here----------------->
+    <div class="contact-us-container row custom-container">
+        <div class="col-sm-12 col-md-6 contact-form-sec">
+            <p class="content-ttl-prefix">{{contactBlockDataArr.blockName}}</p>
+            <h1 class="content-ttl-sml">{{contactBlockDataArr.blockTtl}}</h1>
+            <form class="contact-form">
+                <input type="text" placeholder="Your name" class="form-control">
+                <input type="email" placeholder="Your email" class="form-control">
+                <textarea placeholder="Your message" class="form-control"></textarea>
+            </form>
+            <button class="btn btn-primary">Submit</button>
+        </div>
+        <div class="col-sm-12 col-md-6 contact-map-sec">
+            <span class="helper"></span>
+            <img src="assets/images/contact_pointer.png" alt="Map Location Marker" class="contact-map-marker"/>
+            <img src="assets/images/banner_style.png" class="contact-card-style"/>
+        </div>
+    </div>
+</div>
