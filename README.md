@@ -1,4 +1,4 @@
-# STEPS
+# Steps to execute the project
 
 Note: Please make sure you have installed node and npm in your system. You can check your node version and npm version by using the following command:
 
@@ -18,7 +18,7 @@ Note: Please make sure you have installed node and npm in your system. You can c
     npm i - g @angular/cli
     ```
 
-4.  **Open to project path in command prompt(med-app folder) and install dependencies:**
+4.  **Open project path in command prompt(med-app folder) and install dependencies:**
     ```shell
     npm i
     ```
